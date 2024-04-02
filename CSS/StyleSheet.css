@@ -4,7 +4,15 @@ body{
 header{
     background-color: #C6DCBA;
     text-align: center;
-    height:100px;
+    height:125px;
+}
+button{
+   background-color: #B3A398;
+   border: #BBC3A4;
+   color: #C6DCBA;
+   height: 25px;
+   width: 150px;
+
 }
 h1{
     color:#B3A398;
