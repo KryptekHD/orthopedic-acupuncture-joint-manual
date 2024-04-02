@@ -3,164 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/StyleSheet.css">
     <title>Orthopedic acupuncture joint manual</title>
 </head>
 <body>
     <header>
         <h1>OAJM</h1>
-        <p>Here is a join manual for determining acupuncture point </p>
+        <p>Here is a joint manual for determining acupuncture points </p>
     </header>
     <div class="container">
         <div id="card1">
-            <input type="checkbox" id="vessels" name="vessels" value="vessels">
-            <label for="vessels">Vessels</label>
-            <p id="vessels-point"></p>
-
-            <input type="checkbox" name="bones" id="bone" value="bone">
-            <label for="bone"> Bone</label>
-            <p id="bone-points"></p>
-
-            <input type="checkbox" name="blood" id="blood" value="blood">
-            <label for="blood"> Blood</label>
-            <p id="blood-points"></p>
-
-            <input type="checkbox" name="sinews" id="sinews" value="sinews">
-            <label for="sinews"> Sinews</label>
-            <p id="sinews-points"></p>
-
-            <input type="checkbox" name="marrow" id="marrow" value="marrow">
-            <label for="marrow"> Marrow</label>
-            <p id="marrow-points"></p>
-
-            <input type="checkbox" name="zang" id="zang" value="zang">
-            <label for="zang"> Zang</label>
-            <p id="zang-points"></p>
-
-            <input type="checkbox" name="fu" id="fu" value="fu">
-            <label for="fu"> Fu</label>
-            <p id="fu-points"></p>
-
-            <input type="checkbox" name="qi" id="qi" value="qi">
-            <label for="qi"> Qi</label>
-            <p id="qi-points"></p>  
+            <div class="area">
+                <input type="checkbox" class="input1" id="vessels" name="vessels" value="vessels">
+                <label id="vess" for="vessels">Vessels</label>
+                <p  class="p" id="vessels-point"> </p>
+             </div>
+             <div class="area">
+                <input type="checkbox" class="input1" name="bones" id="bone" value="bone">
+                <label for="bone"> Bone</label>
+                <p class="p" id="bone-point"></p>
+             </div>
+             <div class="area">
+                <input type="checkbox" class="input1" name="blood" id="blood" value="blood">
+                <label for="blood"> Blood</label>
+                <p class="p" id="blood-point"></p>
+             </div>
+             <div class="area">
+                <input type="checkbox" class="input1" name="sinews" id="sinews" value="sinews">
+                <label for="sinews"> Sinews</label>
+                <p class="p" id="sinews-point"></p>
+             </div>
+             <div class="area">
+                <input type="checkbox" class="input1" name="marrow" id="marrow" value="marrow">
+                <label for="marrow"> Marrow</label>
+                <p class="p" id="marrow-point"></p>
+             </div>
+             <div class="area">
+                <input type="checkbox" class="input1" name="zang" id="zang" value="zang">
+                <label for="zang"> Zang</label>
+                <p class="p" id="zang-point"></p>
+             </div>
+             <div class="area">
+                <input type="checkbox" class="input1" name="fu" id="fu" value="fu">
+                <label for="fu"> Fu</label>
+                <p class="p" id="fu-point"></p>
+             </div>
+             <div class="area">
+                <input type="checkbox" class="input1" name="qi" id="qi" value="qi">
+                <label for="qi"> Qi</label>
+                <p class="p" id="qi-point"></p>  
+             </div>
         </div>
-        <div id="card2">
-            <input type="checkbox" name="qi-stangination" id="qi-stangination" value="qi-stangination">
-            <label for="qi-stangination"> Qi Stangination</label>
-            <div class="visiable" id="sub-areas">
-                <br>
-                <input type="checkbox" name="upper-body" id="upper-body" value="upper-body">
-                <label for="upper-body">Upper Body</label>
-                <p id="upper-body-point"></p>
+    </div>    
 
-                <input type="checkbox" name="middle-body" id="middle-body" value="middle-body">
-                <label for="middle-body"> Middle Body</label>
-                <p id="middle-body-point"></p>
+    <div id="container2">
+        <div class="card2" id="one">
+            <div class="card-part">
+                <input type="checkbox" name="qi-stangination" id="qi-stangination" value="qi-stangination">
+                <label for="qi-stangination"> Qi Stangination</label>
+             </div>
+            <div class="invisiable" id="sub-areas">
 
-                <input type="checkbox" name="lower-body" id="lower-body" value="lower-body">
-                <label for="lower-body"> Lower Body</label>
-                <p id="lower-body-point"></p>
+                <div class="mid">
+                    <input type="checkbox" name="upper-body" class="upper-body" value="upper-body">
+                    <label for="upper-body">Upper Body</label>
+                    <p class="invisiable" id="upper-body-point">Tx: ST9, Ren17, Du14, Du15</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="middle-body" class="middle-body" value="middle-body">
+                    <label for="middle-body"> Middle Body</label>
+                    <p class="invisiable" id="middle-body-point">Tx: Ren17, Ren 6</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="lower-body" class="lower-body" value="lower-body">
+                    <label for="lower-body"> Lower Body</label>
+                    <p class="invisiable" id="lower-body-point">Tx: GB34, LR3</p>
+                 </div>
                 
             </div>
         </div>
-        <div id="card3">
-            <input type="checkbox" name="qi-xue-stagnation" id="qi-xue-stagnation" value="qi-xue-stagnation">
-            <label for="qi-xue-stagnation"> Qi + Xue Stagnation</label>
-            <div class="visiable" id="sub-areas">
-                <br>
-                <input type="checkbox" name="upper-body" id="upper-body" value="upper-body">
-                <label for="upper-body">Upper Body</label>
-                <p id="upper-body-point"></p>
-
-                <input type="checkbox" name="middle-body" id="middle-body" value="middle-body">
-                <label for="middle-body"> Middle Body</label>
-                <p id="middle-body-point"></p>
-
-                <input type="checkbox" name="lower-body" id="lower-body" value="lower-body">
-                <label for="lower-body"> Lower Body</label>
-                <p id="lower-body-point"></p>
-                
-            </div>
-        </div>
-        <div id="card4">
-            <input type="checkbox" name="xue-stagnation" id="xue-stagnation" value="xue-stagnation">
-            <label for="xue-stagnation"> Xue Stagnation</label>
-            <div class="visiable" id="sub-areas">
-                <br>
-                <input type="checkbox" name="upper-body" id="upper-body" value="upper-body">
-                <label for="upper-body">Upper Body</label>
-                <p id="upper-body-point"></p>
-
-                <input type="checkbox" name="middle-body" id="middle-body" value="middle-body">
-                <label for="middle-body"> Middle Body</label>
-                <p id="middle-body-point"></p>
-
-                <input type="checkbox" name="lower-body" id="lower-body" value="lower-body">
-                <label for="lower-body"> Lower Body</label>
-                <p id="lower-body-point"></p>
-                
-            </div>
-        </div>
-        <div id="card5">
-            <input type="checkbox" name="damp" id="damp" value="damp">
-            <label for="damp">Damp</label>
-            <div class="visiable" id="sub-areas">
-                <br>
-                <input type="checkbox" name="upper-body" id="upper-body" value="upper-body">
-                <label for="upper-body">Upper Body</label>
-                <p id="upper-body-point"></p>
-
-                <input type="checkbox" name="middle-body" id="middle-body" value="middle-body">
-                <label for="middle-body"> Middle Body</label>
-                <p id="middle-body-point"></p>
-
-                <input type="checkbox" name="lower-body" id="lower-body" value="lower-body">
-                <label for="lower-body"> Lower Body</label>
-                <p id="lower-body-point"></p>
-                
-            </div>
-        </div>
-        <div id="card6">
-            <input type="checkbox" name="cold" id="cold" value="cold">
-            <label for="cold"> Cold</label>
-            <div class="visiable" id="sub-areas">
-                <br>
-                <input type="checkbox" name="upper-body" id="upper-body" value="upper-body">
-                <label for="upper-body">Upper Body</label>
-                <p id="upper-body-point"></p>
-
-                <input type="checkbox" name="middle-body" id="middle-body" value="middle-body">
-                <label for="middle-body"> Middle Body</label>
-                <p id="middle-body-point"></p>
-
-                <input type="checkbox" name="lower-body" id="lower-body" value="lower-body">
-                <label for="lower-body"> Lower Body</label>
-                <p id="lower-body-point"></p>
-                
-            </div>
-        </div>
-        <div id="card7">
-            <input type="checkbox" name="hot" id="hot" value="hot">
-            <label for="hot"> Hot</label>
-            <div class="visiable" id="sub-areas">
-                <br>
-                <input type="checkbox" name="upper-body" id="upper-body" value="upper-body">
-                <label for="upper-body">Upper Body</label>
-                <p id="upper-body-point"></p>
-
-                <input type="checkbox" name="middle-body" id="middle-body" value="middle-body">
-                <label for="middle-body"> Middle Body</label>
-                <p id="middle-body-point"></p>
-
-                <input type="checkbox" name="lower-body" id="lower-body" value="lower-body">
-                <label for="lower-body"> Lower Body</label>
-                <p id="lower-body-point"></p>
-                
-            </div>
-        </div>
-
-
-    </div>
+        
+            <div class="card2">
+                <div class="card-part">
+                    <input type="checkbox" name="qi-xue-stagnation" id="qi-xue-stagnation" value="qi-xue-stagnation">
+                    <label for="qi-xue-stagnation"> Qi + Xue Stagnation</label>
+                 </div>
+                <div class="invisiable" id="sub-areas">
     
+                    <div class="mid">
+                        <input type="checkbox" name="upper-body" class="upper-body" value="upper-body">
+                        <label for="upper-body">Upper Body</label>
+                        <p class="invisiable" id="upper-body-point1">Tx: ST9, Ren17, Du14, Du15, BL11</p>
+                    </div>
+                    <div class="mid">
+                        <input type="checkbox" name="middle-body" class="middle-body" value="middle-body">
+                        <label for="middle-body"> Middle Body</label>
+                        <p class="invisiable" id="middle-body-point1">Tx: Ren17</p>
+                    </div>
+                    <div class="mid">
+                        <input type="checkbox" name="lower-body" class="lower-body" value="lower-body">
+                        <label for="lower-body"> Lower Body</label>
+                        <p class="invisiable" id="lower-body-point1">Tx: ST37, ST39</p>
+                     </div>
+                    
+                </div>
+            </div>
+        <div class="card2">
+            <div class="card-part">
+                <input type="checkbox" name="xue-stagnation" id="xue-stagnation" value="xue-stagnation">
+                <label for="xue-stagnation"> Xue Stagnation</label>
+             </div>
+            <div class="invisiable" id="sub-areas">
+                <div class="mid">
+                    <input type="checkbox" name="upper-body" class="upper-body" value="upper-body">
+                    <label for="upper-body">Upper Body</label>
+                    <p class="invisiable" id="upper-body-point2">Tx: BL11</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="middle-body" class="middle-body" value="middle-body">
+                    <label for="middle-body"> Middle Body</label>
+                    <p class="invisiable" id="middle-body-point2">Tx: BL17, SP10</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="lower-body" id="lower-body" value="lower-body">
+                    <label for="lower-body"> Lower Body</label>
+                    <p class="invisiable" id="lower-body-point2">Tx: ST37, ST39, SP10</p>
+                 </div>             
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-part">
+                <input type="checkbox" name="damp" id="damp" value="damp">
+                <label for="damp">Damp</label>
+             </div>
+            <div class="invisiable" id="sub-areas">
+                <div class="mid">
+                    <input type="checkbox" name="upper-body" class="upper-body" value="upper-body">
+                    <label for="upper-body">Upper Body</label>
+                    <p class="invisiable" id="upper-body-point3">Tx: LU7, LI6, HT5, SI7, PC6, SJ5, Ren15</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="middle-body" class="middle-body" value="middle-body">
+                    <label for="middle-body"> Middle Body</label>
+                    <p class="invisiable" id="middle-body-point3">Tx: ST40, SP21, Ren15, Du1</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="lower-body" class="lower-body" value="lower-body">
+                    <label for="lower-body"> Lower Body</label>
+                    <p class="invisiable" id="lower-body-point3">Tx: ST40, SP4, BL58, KD4, GB37, LR5,</p>
+                 </div>             
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-part">
+                <input type="checkbox" name="cold" id="cold" value="cold">
+                <label for="cold"> Cold</label>
+             </div>
+            <div class="invisiable" id="sub-areas">
+                <div class="mid">
+                    <input type="checkbox" name="upper-body" class="upper-body" value="upper-body">
+                    <label for="upper-body">Upper Body</label>
+                    <p class="invisiable" id="upper-body-point4">Tx: MOXA: LU9, LI4, HT7, SI4, PC7, SJ4</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="middle-body" class="middle-body" value="middle-body">
+                    <label for="middle-body"> Middle Body</label>
+                    <p class="invisiable" id="middle-body-point4">Tx: MOXA: Ren6, Ren9</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="lower-body" class="lower-body" value="lower-body">
+                    <label for="lower-body"> Lower Body</label>
+                    <p class="invisiable" id="lower-body-point4">Tx: MOXA: ST42, SP3, BL64, KD3, GB40, LR3, BL67</p>
+                 </div>             
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-part">
+                <input type="checkbox" name="hot" id="hot" value="hot">
+                <label for="hot"> Hot</label>
+             </div>
+            <div class="invisiable" id="sub-areas">
+                <div class="mid">
+                    <input type="checkbox" name="upper-body" class="upper-body" value="upper-body">
+                    <label for="upper-body">Upper Body</label>
+                    <p class="invisiable" id="upper-body-poin5t">Tx: Disperse: Lu10, LI5, HT8, SI5, PC8, SJ6, LU7</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="middle-body" class="middle-body" value="middle-body">
+                    <label for="middle-body"> Middle Body</label>
+                    <p class="invisiable" id="middle-body-point5">Tx: Disperse:</p>
+                </div>
+                <div class="mid">
+                    <input type="checkbox" name="lower-body" class="lower-body" value="lower-body">
+                    <label for="lower-body"> Lower Body</label>
+                    <p class="invisiable" id="lower-body-point5">Tx: Disperse:ST41, SP2, BL60, KD2, GB38, LR2, KD6</p>
+                 </div>             
+            </div>
+     </div>
+     <script src="./JS/index.js"></script>
+
 </body>
+<footer>
+    <h1>OAJM</h1>
+</footer>
 </html>
